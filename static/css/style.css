@@ -1,0 +1,168 @@
+body {
+	background-color: #1e1e2f;
+	color: #ffff;
+	font-family: 'Poppins', sans-serif;
+	font-size: 27px;
+}
+.block {
+	background-color: #27293d;
+	box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.5);
+	border-radius: 5px;
+}
+
+.container-fluid {
+	padding: 0px;
+}
+
+.sidebar {
+	
+	position: fixed;
+	box-shadow: 0px 1px 20px 0px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	margin-top: 20px;
+
+	padding-bottom: 250px;
+	padding-top: 20px;
+	padding-left: 0px;
+	padding-right: 0px;
+	/* background: linear-gradient(0deg, #EE2B1C, #FD5D93); */
+	background-color: #27293d;
+}
+
+.content {
+
+	margin: 30px;
+	padding: 50px;
+
+}
+
+.chart {
+
+	margin: 20px 0px 20px 20px;
+
+
+}
+
+.logo {
+
+	padding-right: 200px;
+	padding-left: 20px;
+	padding-bottom: 10px; 
+	border-bottom: 1px solid;
+
+}
+
+ul {
+
+	padding: 0px;
+
+}
+
+li {
+	
+	padding-left: 20px;
+	padding-top: 20px;
+	list-style-type: none;
+	font-size: 20px;
+
+}
+
+a:link, a:active, a:visited, a:hover {
+
+	text-decoration: none;
+	color: #e9ecef;
+
+}
+
+header {
+	overflow:hidden;
+	
+	padding: 10px 90px 0px 0px;
+
+}
+
+.fa-user-circle {
+
+	display: flex;
+	justify-content: flex-end;
+}
+
+.container {
+
+	margin-left: -15px;
+	margin-right: -15px;
+
+}
+
+.fixed-sidebar {
+
+	padding-left: 100px;
+
+}
+.main-content {
+
+	padding-right: 100px;
+
+}
+
+.profile-nav {
+
+	float:right;
+
+}
+
+.profile-name {
+
+	font-size: 18px;
+	margin:0px;
+}
+
+.fa-tachometer-alt{
+	color:#00BFAE;
+}
+
+.fa-chart-bar{
+	color:#00BFAE;
+}
+
+.fa-database{
+	color:#00BFAE;
+}
+
+.fa-cogs{
+	color:#00BFAE;
+}
+
+.fa-question-circle{
+	color:#00BFAE;
+}
+
+.fa-address-card{
+	color:#00BFAE;
+}
+
+.st0 {
+	fill:#00BFAE;
+}
+
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(200px);
+  opacity: 0;
+}
+
+
+.red-line {
+
+	border: 1px solid red;
+	box-shadow: 0px 0px 10px 2px red;
+	margin-top:-5px;
+	margin-bottom: 2px;
+	margin-right:220px;
+}
