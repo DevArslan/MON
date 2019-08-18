@@ -1,0 +1,67 @@
+{% extends "wrapper.html" %}
+{% load static %}
+
+{% block content %}
+
+
+		<div class="main-content col-9">
+
+			<div class="container">
+
+				<div class="row">
+					<div class="block chart col-md-5">
+						<canvas id="myPieChart">
+						</canvas>
+					</div>
+					<div class="block chart col-md-6">
+						<canvas id="myPieChart2">
+						</canvas>
+					</div>
+				</div>
+
+
+
+				<div class="row">
+
+					<div class="content block col-md-12">
+						
+						<canvas id="PolarArea">
+						</canvas>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="content block col-md-7  ">
+
+						Блок
+
+					</div>
+
+				</div>
+				<div class="row">
+
+					<div class="content block col-md-7  ">
+
+						Блок
+
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<script type="text/javascript" src="{% static 'js/websocket.js' %}"></script> 
+<script type="text/javascript" src="{% static 'js/dashboard.js' %}"></script> 
+
+{% endblock %}
+
+

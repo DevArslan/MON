@@ -1,0 +1,49 @@
+{% extends "wrapper.html" %}
+{% load static %}
+
+{% block content %}
+
+{% verbatim %}
+<div class="main-content col-md-9">
+	<div class="container">
+		<div class="row">
+			<table class="block col-12 database-table">
+				<thead>
+					<tr>
+						<th>Number</th>
+						<th>Date</th>
+						<th>Name</th>
+						<th>Size</th>
+					</tr>
+				</thead>
+				<tbody id = "dataset-body" >
+					<tr v-for = "k in number.length" >
+						<td >{{number[k] }}</td>
+						<td >{{date[k] }}</td>
+						<td >{{name[k] }}</td>
+						<td >{{size[k] }}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+
+{% endverbatim %}
+
+
+<script type="text/javascript">
+
+	var number_list = {{number_array}};
+	var date_list = {{date_array}};
+	var name_list = {% autoescape off %}    {{name_array}}    {% endautoescape %};
+	var size_list = {{size_array}};
+
+</script>
+
+
+<script type="text/javascript" src="{% static 'js/database.js' %}"></script> 
+
+
+
+{% endblock %}
