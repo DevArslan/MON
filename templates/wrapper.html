@@ -1,3 +1,6 @@
+{% load render_bundle from webpack_loader %}
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,7 +35,7 @@
 
 
 
-		<div id="example-1">
+		<!--<div id="example-1">
 			<a  href="#" class="profile-link"><svg version="1.1" id="Слой_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				viewBox="0 0 98 94" style="enable-background:new 0 0 98 94;" xml:space="preserve">
 				<g>
@@ -48,6 +51,18 @@
 
 			<p class="profile-name">Profile</p>
 		</div>
+		-->
+
+		<div id="app">
+			
+				Login
+				
+				    <app>
+				    	
+				    </app>
+				</div>
+			
+		</div>
 
 
 	</div>
@@ -57,8 +72,8 @@
 
 <div class="container-fluid">
 	<div class="row">
-		<div class="fixed-sidebar col-3">
-			<div class=" sidebar col-2">
+		<div class="fixed-sidebar col-md-3">
+			<div class=" sidebar col-md-2">
 				
 				<div class="logo">
 
@@ -130,7 +145,10 @@
 		</div>
 	
 	{% block content %}{% endblock %}
-	
+{% render_bundle 'app' %}
 <script type="text/javascript" src="{% static 'js/script.js' %}"></script> 
+
+
+
 </body>
 </html>

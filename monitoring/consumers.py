@@ -9,7 +9,7 @@ from django.db.models.signals import post_save
 
 
 
-class DashBoardConsumer(AsyncConsumer):
+class MonitoringConsumer(AsyncConsumer):
 	
 	async def websocket_connect(self, event):
 		print ('connection successfull', event)
