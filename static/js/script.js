@@ -35,6 +35,12 @@ new Vue({
     upHere : false
   }
 })
+new Vue({
+  el: '#example-7',
+  data : {
+    upHere : false
+  }
+})
 
 
 

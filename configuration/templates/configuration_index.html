@@ -1,0 +1,61 @@
+{% extends "wrapper.html" %}
+{% load static %}
+
+{% block content %}
+
+
+
+
+<div class="main-content col-9">
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="content block col-md-7  ">
+
+				<form name="nameServerForm"  action=" " method="POST">
+					<input class="sp_form" id="valueNameServer" placeholder="Введите название сервера" type="text">
+					{% csrf_token %}
+					<input class="sp_form" id="valueTag" placeholder="Введите тег" type="text">
+					{% csrf_token %}
+					<input type="submit" class="btn btn-success" value="Принять">
+				</form> 
+
+			</div>
+
+		</div>
+
+	</div>
+
+<script type="text/javascript">
+
+
+
+
+
+
+  var socket_url = 'ws://' + window.location.host + window.location.pathname
+
+  var socket = new WebSocket(socket_url)
+  socket.onopen = function (event) {
+    console.log('socket opened',event);
+
+    let nameServer = document.getElementById("valueNameServer");
+    let nameTag = document.getElementById("valueTag");
+    
+    document.forms.nameServerForm.onsubmit = function(e) {
+	e.preventDefault();
+	console.log(nameServer.value);
+	array = [nameServer.value,nameTag.value];
+	socket.send(array);
+	
+};
+
+  }
+
+  
+
+</script>
+
+	{% endblock %}

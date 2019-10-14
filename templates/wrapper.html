@@ -83,7 +83,7 @@
 
 				<ul >
 
-					<li class="nav_elem" id="example-10">
+					<li class="nav_elem" id="example-10" @mouseover="upHere = true" @mouseleave="upHere = false">
 						<i class="fas fa-tachometer-alt"></i>
 						<a href="/dashboard" @mouseover="upHere = true" @mouseleave="upHere = false">
 							Dashboard
@@ -133,6 +133,15 @@
 						<i class="fas fa-address-card"></i>
 						<a href="/about" @mouseover="upHere = true" @mouseleave="upHere = false">
 							About as
+							<transition name="slide-fade">
+								<div v-show="upHere" class="red-line"></div>
+							</transition>
+						</a>
+					</li>
+					<li class="nav_elem" id="example-7">
+						<i class="fas fa-address-card"></i>
+						<a href="/configuration" @mouseover="upHere = true" @mouseleave="upHere = false">
+							Configuration
 							<transition name="slide-fade">
 								<div v-show="upHere" class="red-line"></div>
 							</transition>

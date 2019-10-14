@@ -4,53 +4,70 @@
 {% block content %}
 
 
-		<div class="main-content col-9">
+<div class="main-content col-9">
 
-			<div class="container">
+	<div class="container">
 
-				<div class="row">
-					<div class="block chart col-md-12">
-						<canvas id="myChart">
-						</canvas>
-					</div>
-				</div>
-
-
-
-				<div class="row">
-
-					<div class="content block col-md-12">
-
-						Блок
-
-					</div>
-
-				</div>
-
-				<div class="row">
-
-					<div class="content block col-md-7  ">
-
-						Блок
-
-					</div>
-
-				</div>
-				<div class="row">
-
-					<div class="content block col-md-7  ">
-
-						Блок
-
-					</div>
-
-				</div>
-
+		<div class="row">
+			<div class="block chart col-md-12">
+				<canvas id="myChart">
+				</canvas>
 			</div>
 		</div>
+		<div class="row">
+
+			<div class="content block col-md-7  ">
+
+				<form name="nameServerForm"  action=" " method="POST">
+					<input class="sp_form" id="valueNameServer" placeholder="Введите название сервера" type="text">
+					{% csrf_token %}
+					<input class="sp_form" id="valueTag" placeholder="Введите тег" type="text">
+					{% csrf_token %}
+					<input type="submit" class="btn btn-success" value="Принять">
+				</form> 
+				<!--<form id="get_data_button" name="get_data"  action=" " method="POST"> 
+			        <input type="submit" class="btn btn-success" value="Получить данные">
+			        {% csrf_token %}
+			     </form>
+				-->
+			</div>
+
+		</div>
+
+
+		<div class="row">
+
+			<div class="content block col-md-12">
+
+				Блок
+
+			</div>
+
+		</div>
+
+		<div class="row">
+
+			<div class="content block col-md-7  ">
+
+				Блок
+
+			</div>
+
+		</div>
+		<div class="row">
+
+			<div class="content block col-md-7  ">
+
+				Блок
+
+			</div>
+
+		</div>
+
 	</div>
 </div>
-
+</div>
+</div>
 
 
 

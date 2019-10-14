@@ -25,6 +25,7 @@ urlpatterns = [
     path('monitoring/',include('monitoring.urls')),
     path('settings/',include('settings.urls')),
     path('about/',include('about.urls')),
+    path('configuration/',include('configuration.urls')),
     path("",
         TemplateView.as_view(template_name="wrapper.html"),
         name="app",
